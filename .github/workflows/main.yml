@@ -11,12 +11,14 @@ on:
   # run on every push on the master branch
   push:
     branches:
-    - master
+    - main
     
   
 
 jobs:
   generate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 10
     
